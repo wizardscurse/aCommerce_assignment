@@ -1,9 +1,8 @@
-# ASSESSMENT02
+# aCommerce test
 
 ## Install
 
-    $ git clone https://github.com/wizardscurse/skilllane_assessment.git
-    $ cd assessment02
+    $ git clone https://github.com/wizardscurse/aCommerce_assignment.git
     $ npm install or yarn install
 
 ## Start & watch
