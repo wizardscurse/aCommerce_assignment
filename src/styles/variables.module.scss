@@ -1,0 +1,65 @@
+$font-family: 'thaisans_neueregular', Helvetica, sans-serif;
+
+// Extra small screen / phone
+$screen-xs: 375px;
+$screen-xs-min: '0' px;
+
+// Small screen /tablet
+$screen-sm: 576px;
+$screen-sm-min: $screen-sm;
+
+// Medium screen / desktop
+$screen-md: 768px;
+$screen-md-min: $screen-md;
+
+// Large screen / wide desktop
+$screen-lg: 992px;
+$screen-lg-min: $screen-lg;
+
+// Extra large screen / full hd
+$screen-xl: 1200px;
+$screen-xl-min: $screen-xl;
+
+// Extra extra large screen / large descktop
+$screen-xxl: 1600px;
+$screen-xxl-min: $screen-xxl;
+
+//Provide maximum
+$screen-xs-max: ($screen-sm-min - 1px);
+$screen-sm-max: ($screen-md-min - 1px);
+$screen-md-max: ($screen-lg-min - 1px);
+$screen-lg-max: ($screen-xl-min - 1px);
+$screen-xl-max: ($screen-xxl-min - 1px);
+
+$background-primary-color: #fff;
+$background-black-primary-color: #ccc;
+
+$red-primary-color: #d13434;
+$red-secondary-color: #f7c2c2;
+
+$black-primary-color: #000;
+$black-secondary-color: #555555;
+$black-tertiary-color: #ccc;
+
+$white-primary-color: #fff;
+
+$green-primary-color: #003a1d;
+$green-secondary-color: #00532a;
+$green-tertiary-color: #5c7635;
+
+$border-primary-color: #aaa;
+$border-secondary-color: #ccc;
+
+:export {
+  screenXsMin: $screen-xs-min;
+  screenSmMin: $screen-sm-min;
+  screenMdMin: $screen-md-min;
+  screenLgMin: $screen-lg-min;
+  screenXlMin: $screen-xl-min;
+  screenXxlMin: $screen-xxl-min;
+  screenXsMax: $screen-xs-max;
+  screenSmMax: $screen-sm-max;
+  screenMdMax: $screen-md-max;
+  screenLgMax: $screen-lg-max;
+  screenXlMax: $screen-xl-max;
+}

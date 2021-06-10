@@ -1,0 +1,61 @@
+@import '../../styles/index.scss';
+
+.root {
+  padding: 40px;
+
+  .section {
+    margin-bottom: 15px;
+  }
+  .items-count {
+    @include typo-heading-4();
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+:global(.ant-pagination-disabled) {
+  display: none;
+}
+
+:global(.ant-pagination-item) {
+  border-color: $red-secondary-color;
+  background: $red-secondary-color;
+}
+
+:global(.ant-pagination-item-active) {
+  border-color: $red-primary-color;
+  background: $red-primary-color;
+}
+
+:global(.ant-pagination-item-active a) {
+  color: $black-primary-color;
+}
+
+:global(.ant-pagination-item),
+:global(.ant-pagination-next),
+:global(.ant-pagination-prev) {
+  position: relative;
+  min-width: 45px;
+  height: 45px;
+}
+
+:global(.ant-pagination-item a) {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:global(.ant-pagination-item-link) {
+  border: 1px solid $black-tertiary-color !important;
+  background-color: $black-tertiary-color !important;
+
+  > span {
+    color: $white-primary-color;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.root {
+  position: relative;
+  height: 100%;
+
+  .title,
+  .price {
+    @include typo-heading-4();
+  }
+  .createDate {
+    @include typo-paragraph-1();
+  }
+
+  .title,
+  .createDate,
+  .price {
+    margin-bottom: 10px;
+  }
+
+  .star-container {
+    display: flex;
+    margin-bottom: 20px;
+    color: $red-primary-color;
+  }
+
+  .price {
+    position: absolute;
+    bottom: 0;
+  }
+}
